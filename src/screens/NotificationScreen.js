@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Text} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
 import {foregroundMessage, getFCMToken} from '../utils/firebase';
 
 function NotificationScreen() {
@@ -9,7 +9,16 @@ function NotificationScreen() {
     getFCMToken(setToken);
   }, []);
 
-  return <Text>{token}</Text>;
+  return (
+    <View>
+      <Image source={require('../assets/logo.png')} style={styles.logo} />
+    </View>
+  );
 }
-
+const styles = StyleSheet.create({
+  logo: {
+    width: 350,
+    height: 108,
+  },
+});
 export default NotificationScreen;

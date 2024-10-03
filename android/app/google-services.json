@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880337145349",
+    "project_id": "testreactnativeproject-b9458",
+    "storage_bucket": "testreactnativeproject-b9458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880337145349:android:c1109051fa9f7e21c4566c",
+        "android_client_info": {
+          "package_name": "com.mos_staging"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwEdVrGDh4kYQWgoNi62ikwQmlBWYR5_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,6 @@
 import {Alert} from 'react-native';
 import messaging from '@react-native-firebase/messaging';
+import { saveDataToStorage } from './storage';
 
 export function foregroundMessage() {
   const unsubscribe = messaging().onMessage(async remoteMessage => {
@@ -16,6 +17,7 @@ export async function getFCMToken(setToken) {
   ) {
     const token = await messaging().getToken();
     setToken(token);
+    saveDataToStorage(token);
     console.log('FCM Registration Token:', token);
     return token; // Use this token to send messages to the device
   } else {
